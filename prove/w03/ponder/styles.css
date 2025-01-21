@@ -1,0 +1,61 @@
+body {
+  background-color: #770e00;
+}
+body h1 {
+  color: #fff;
+  margin-left: 5%;
+}
+
+#contactform {
+  background-color: #f7db9d;
+}
+@media (min-width: 20em) {
+  #contactform fieldset > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    width: 100%;
+  }
+}
+@media (min-width: 60em) {
+  #contactform fieldset > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: end;
+    padding: 10px;
+  }
+  #contactform fieldset > div label {
+    margin-right: 10px;
+  }
+}
+#contactform fieldset > div input, #contactform fieldset > div textarea {
+  background-color: #fff;
+  margin-right: 10px;
+}
+@media (min-width: 20em) {
+  #contactform {
+    width: 90%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 60em) {
+  #contactform {
+    width: 70%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
