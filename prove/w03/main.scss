@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+$main-font-family: Helvetica, Arial, sans-serif;
+$header-font-family: "Lora", Arial, sans-serif;
+$font-color: #333;
+$border: solid 1px #d0d0d0;
+$visited: #666;
+$hover-color: #00ddff;
+$active: #DEB887;
+$break-large: 600px;
+
+@mixin breakpoint($break) {
+    @if $break == large {
+        @media (min-width: $break-large) { @content; }
+    }
+}
+
+body {
+    font-family: $main-font-family;
+    color: $font-color;
+    font-weight: 500;
+    a {
+        text-decoration: none;
+        color: $font-color;
+    }
+}
+
+h1, h2 {
+    font-weight: 500;
+    font-family: $header-font-family;
+}
+
+header {
+    text-align: center;
+    @include breakpoint(large) {
+        margin-bottom: 20px;
+    }
+}
+
+nav {
+    border-top: $border;
+    border-bottom: $border;
+    font-family: $header-font-family;
+    text-transform: uppercase;
+    ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0%;
+
+        @include breakpoint(large) {
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+        }
+    }
+    li {
+        padding: 5px;
+        @include breakpoint(large) {
+            margin: 5px;
+        }
+    }
+    a:visited {
+        color: $visited;
+    }
+    a:hover {
+        color: $hover-color;
+    }
+    a:active {
+        color: $active;
+    }
+}
+
+.post-date {
+    text-align: right;
+    text-transform: uppercase;
+    margin: 40px 10px 5px 0px;
+
+    @include breakpoint(large) {
+        margin-top: 20px;
+    }
+}
+
+.post-content {
+    border-top: $border;
+    @include breakpoint(large) {
+        border-top: none;
+    }
+    h2, p {
+        margin-left: 10px;
+        margin-right: 10px; 
+    }
+    h2:hover {
+        color: $hover-color;
+    }
+    h2:active {
+        color: $active;
+    }
+    a {
+        color: $visited;
+    }
+    a:hover {
+        color: $hover-color;
+    }
+    a:active {
+        color: $active;
+    }
+}
+
+section {
+    @include breakpoint(large) {
+        border-bottom: $border;
+        border-top: none;
+        border-left: $border;
+    }
+    
+}
+
+figure img {
+    width: 100%;
+    @include breakpoint(large) {
+        margin: auto 20%;
+        width: 300px;
+    }
+}
+
+article {
+    @include breakpoint(large) {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+}
