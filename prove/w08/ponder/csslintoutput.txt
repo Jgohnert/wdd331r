@@ -1,0 +1,29 @@
+
+stylesheet.css
+  16:18  ✖  Unexpected quotes      font-family-name-quotes
+            around "Lora"
+  16:18  ✖  Unexpected missing     font-family-no-missing-generic-family-keyword
+            generic font family
+  25:14  ✖  Unexpected unit        length-zero-no-unit
+  36:18  ✖  Unexpected quotes      font-family-name-quotes
+            around "Lora"
+  36:18  ✖  Unexpected missing     font-family-no-missing-generic-family-keyword
+            generic font family
+  49:12  ✖  Expected "#00ddff" to  color-hex-length
+            be "#0df"
+  55:28  ✖  Unexpected unit        length-zero-no-unit
+  67:1   ✖  Expected selector      no-descending-specificity
+            ".post-content a" to
+            come before selector
+            "nav a:visited"
+  75:8   ✖  Expected "context"     media-feature-range-notation
+            media feature range
+            notation
+  77:5   ✖  Unexpected empty line  rule-empty-line-before
+            before rule
+  93:9   ✖  Unexpected empty line  declaration-empty-line-before
+            before declaration
+
+✖ 11 problems (11 errors, 0 warnings)
+  8 errors potentially fixable with the "--fix" option.
+
