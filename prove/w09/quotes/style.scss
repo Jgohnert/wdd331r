@@ -1,0 +1,26 @@
+@use "_quote-box.scss";
+
+:root {
+    --max-width: 900px;
+    --min-width: 300px;
+    --preferred-width: 80%;
+    --quoteColor: #b3d4e6;
+    --min-type: 1.2rem;
+    --pref-type: 2vw;
+    --max-type: 4rem
+}
+
+h1, main {
+    font-size: clamp(var(--min-type), var(--pref-type), var(--max-type));
+}
+
+h1 {
+    text-align: center;
+}
+
+.dark-section {
+    --brightness: 500%;
+    background-color: #333;
+    color: white;
+}
+
