@@ -178,7 +178,7 @@ header {
 }
 
 .visit {
-    margin: 140px 15px;
+    margin: 50px 15px;
 
     &__img {
         overflow: hidden;
@@ -201,24 +201,69 @@ header {
 
     &__text {
         margin: 8px auto;
+
+        &__div {
+            padding: 5%;
+            color: white;
+            background-color: $primary-color;
+            background-image: url("../images/blue-background.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+
         
-        // /* SVG Layer */
-        // svg {
-        //     position: absolute;
-        //     top: -10px;
-        //     left: 0;
-        //     width: 100%;
-        // }
-
-        div {
-            padding: 5% 3%;
-            background-image: url("images/blue-background.png"); /* Path to the image */
-            background-size: cover; /* Ensures the image covers the element */
-            background-repeat: no-repeat; /* Prevents the image from repeating */
-            background-position: center;
-
             h2 {
                 margin: 0%;
+                font-size: 28px;
+                font-weight: 100;
+            }
+
+            p {
+                line-height: 1.5;
+                margin: 30px auto;
+            }
+
+            label {
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            .input-div {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            #visit-input {
+                margin-top: 8px;
+                margin-right: 10px;
+                min-width: 80%;
+                padding: 12px;
+                border-radius: $border-radius;
+                border: #424c53;
+                font-size: 16px;
+                
+            }
+
+            #visit-input::placeholder {
+                color: #b9b8b8;
+            }
+
+            .button-visit {
+                cursor: pointer;
+                margin-top: 8px;
+                margin-right: auto;
+                width: 60px;
+                padding: 10px;
+                font-size: 16px;
+                border-radius: $border-radius;
+                border: #424c53;
+                color: $primary-color;
+            }
+
+            .button-visit:hover {
+                background-color: $secondary-color;
+                color: white;
+                transition: $transition;
             }
         }
     }

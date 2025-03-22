@@ -142,7 +142,7 @@ header #profileSVG:hover {
 }
 
 .visit {
-  margin: 140px 15px;
+  margin: 50px 15px;
 }
 .visit__img {
   overflow: hidden;
@@ -161,15 +161,59 @@ header #profileSVG:hover {
 .visit__text {
   margin: 8px auto;
 }
-.visit__text div {
-  padding: 5% 3%;
-  background-image: url("images/blue-background.png"); /* Path to the image */
-  background-size: cover; /* Ensures the image covers the element */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-position: center;
+.visit__text__div {
+  padding: 5%;
+  color: white;
+  background-color: #007da5;
+  background-image: url("../images/blue-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.visit__text div h2 {
+.visit__text__div h2 {
   margin: 0%;
+  font-size: 28px;
+  font-weight: 100;
+}
+.visit__text__div p {
+  line-height: 1.5;
+  margin: 30px auto;
+}
+.visit__text__div label {
+  font-size: 14px;
+  font-weight: 600;
+}
+.visit__text__div .input-div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.visit__text__div #visit-input {
+  margin-top: 8px;
+  margin-right: 10px;
+  min-width: 80%;
+  padding: 12px;
+  border-radius: 2px;
+  border: #424c53;
+  font-size: 16px;
+}
+.visit__text__div #visit-input::placeholder {
+  color: #b9b8b8;
+}
+.visit__text__div .button-visit {
+  cursor: pointer;
+  margin-top: 8px;
+  margin-right: auto;
+  width: 60px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 2px;
+  border: #424c53;
+  color: #007da5;
+}
+.visit__text__div .button-visit:hover {
+  background-color: #003057;
+  color: white;
+  transition: 0.3s;
 }
 
 /*# sourceMappingURL=style.css.map */
