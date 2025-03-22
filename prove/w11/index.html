@@ -11,58 +11,73 @@
   </head>
   <body>
     <header>
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 7.75c0-.414.334-.75.75-.75h14.5a.749.749 0 110 1.5H4.75A.748.748 0 014 7.75zm0 4c0-.414.334-.75.75-.75h14.5a.749.749 0 110 1.5H4.75a.748.748 0 01-.75-.75zm0 4c0-.414.334-.75.75-.75h14.5a.749.749 0 110 1.5H4.75a.748.748 0 01-.75-.75z"></path></svg>
+      <svg class="ham-menu" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M4 7.75c0-.414.334-.75.75-.75h14.5a.749.749 0 110 1.5H4.75A.748.748 0 014 7.75zm0 4c0-.414.334-.75.75-.75h14.5a.749.749 0 110 1.5H4.75a.748.748 0 01-.75-.75zm0 4c0-.414.334-.75.75-.75h14.5a.749.749 0 110 1.5H4.75a.748.748 0 01-.75-.75z"></path></svg>
       <!-- Light rays design taken from the LDS.org website. -->
-      <svg viewBox="8 8 20 15" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="0%" y1="50%" y2="50%" id="a"><stop stop-color="var(--darkModeBlue, var(--theme-page-header-nav-bg, var(--blue25)))" stop-opacity=".6" offset="0%"></stop><stop stop-color="var(--darkModeBlue, var(--theme-page-header-nav-bg, var(--blue25)))" stop-opacity=".25" offset="100%"></stop></linearGradient><linearGradient x1="0%" y1="50%" y2="50%" id="b"><stop stop-color="var(--darkModeBlue, var(--theme-page-header-nav-bg, var(--blue25)))" stop-opacity=".35" offset="0%"></stop><stop stop-color="var(--darkModeBlue, var(--theme-page-header-nav-bg, var(--blue25)))" stop-opacity=".15" offset="100%"></stop></linearGradient><linearGradient x1="0%" y1="50%" x2="98.607%" y2="50%" id="c"><stop stop-color="var(--darkModeBlue, var(--theme-page-header-nav-bg, var(--blue25)))" stop-opacity=".6" offset="0%"></stop><stop stop-color="var(--darkModeBlue, var(--theme-page-header-nav-bg, var(--blue25)))" stop-opacity=".35" offset="100%"></stop></linearGradient></defs><g fill-rule="nonzero" fill="none"><path fill="url(#a)" d="M6 40V0h10.34l-7.755 40z"></path><path fill="url(#b)" d="M8 40V3.93L33.984 40z"></path><path fill="url(#a)" d="M8 40V0l15.64 40z"></path><path fill="url(#c)" d="M10.598 40H7V0h3.598z"></path><path fill="var(--darkModeBlue, var(--theme-page-header-nav-bg, var(--blue25)))" d="M0 0h8v40H0z"></path></g></svg>
-      <p>THE CHURCH OF JESUS CHRIST OF LATTER-DAY SAINTS</p>
+      <svg class="light-rays" viewBox="8 8 20 15" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="0%" y1="50%" y2="50%" id="a"><stop stop-color="#007da5" stop-opacity=".6" offset="0%"></stop><stop stop-color="#007da5" stop-opacity=".25" offset="100%"></stop></linearGradient><linearGradient x1="0%" y1="50%" y2="50%" id="b"><stop stop-color="#007da5" stop-opacity=".35" offset="0%"></stop><stop stop-color="#007da5" stop-opacity=".15" offset="100%"></stop></linearGradient><linearGradient x1="0%" y1="50%" x2="98.607%" y2="50%" id="c"><stop stop-color="#007da5" stop-opacity=".6" offset="0%"></stop><stop stop-color="#007da5" stop-opacity=".35" offset="100%"></stop></linearGradient></defs><g fill-rule="nonzero" fill="none"><path fill="url(#a)" d="M6 40V0h10.34l-7.755 40z"></path><path fill="url(#b)" d="M8 40V3.93L33.984 40z"></path><path fill="url(#a)" d="M8 40V0l15.64 40z"></path><path fill="url(#c)" d="M10.598 40H7V0h3.598z"></path><path fill="var(--darkModeBlue, var(--theme-page-header-nav-bg, var(--blue25)))" d="M0 0h8v40H0z"></path></g></svg>
+      <img class="church-name" src="images/church-name.png" alt="The Church of Jesus Christ of Latter-Day Saints">
       <svg id="searchIcon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;"><path d="M21.07,19.65l-5-5a7.5,7.5,0,1,0-1.41,1.41l5,5a1,1,0,0,0,1.41-1.41Zm-6.72-5.3a6,6,0,1,1,0-8.49A6,6,0,0,1,14.35,14.35Z"></path></svg>
       <svg id="profileSVG" xmlns="http://www.w3.org/2000/svg" style="width:16px;height:var(--headerSpacing24)" viewBox="4 0 16 24"><path d="M17.361 16.497c0-.954-.734-1.711-1.614-1.711H8.253c-.883 0-1.614.754-1.614 1.711v3.76a.75.75 0 0 1-1.5 0v-3.76c0-1.774 1.391-3.211 3.114-3.211h7.494c1.72 0 3.114 1.44 3.114 3.211v3.76a.75.75 0 0 1-1.5 0v-3.76zM5.139 20.25c0-.414.339-.75.756-.75h12.188c.417 0 .756.333.756.75 0 .414-.339.75-.756.75H5.895a.751.751 0 0 1-.756-.75zM12.167 4.5a2.885 2.885 0 0 0-2.885 2.891 2.885 2.885 0 1 0 5.769 0A2.885 2.885 0 0 0 12.167 4.5zm0 7.283A4.385 4.385 0 0 1 7.782 7.39a4.385 4.385 0 1 1 8.769 0 4.385 4.385 0 0 1-4.384 4.392z"></path></svg>
     </header>
     <div class="hero">
-      <div class="hero__img">
-        <img src="images/hero-image.webp" alt="Kentucky: Church Attendance">
-      </div>
+      <img class="hero__img" src="images/hero-image.webp" alt="Kentucky: Church Attendance">
       <div class="hero__line"></div>
       <h1>The gospel of Jesus Christ can bless your life</h1>
       <p>Discover Christ’s restored Church today</p>
-      <button aria-label="Learn More" type="button" class="button--learn">Learn More</button>
+      <button class="hero__button" aria-label="Learn More" type="button" class="button--learn">Learn more</button>
     </div>
     <main>
-      <div class="believe-container">
+      <div class="believe">
         <h2>What We Believe</h2>
         <p>Learn about The Church of Jesus Christ of Latter-day Saints</p>
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="presentation" class="sc-bpcbzu-0 eKBTvu"><path fill="currentColor" d="M16.223 12.538a.75.75 0 0 0 0-1.076l-5.4-5.25a.75.75 0 1 0-1.046 1.076l4.858 4.702-4.858 4.722a.75.75 0 0 0 1.046 1.076l5.4-5.25z"> </path></svg>
-        <div class="believe-images">
-          <div class="believe-one">
-            <img src="images/learn.webp" alt="Christ Helping Those In Need">
-            <h3>Learn About Jesus Christ</h3>
-            <p>Get to know and follow Him</p>
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="presentation" class="sc-bpcbzu-0 eKBTvu"><path d="M16.223 12.538a.75.75 0 0 0 0-1.076l-5.4-5.25a.75.75 0 1 0-1.046 1.076l4.858 4.702-4.858 4.722a.75.75 0 0 0 1.046 1.076l5.4-5.25z"> </path></svg>
+        <div class="believe__container">
+          <div class="believe__section">
+              <picture class="believe__section__img">
+                <source srcset="images/learn-small.jpg" media="(max-width: 600px)">
+                <img src="images/learn.webp" alt="Christ Helping Those In Need">
+              </picture>
+            <div class="believe__section__text">
+              <h3>Learn About Jesus Christ</h3>
+              <p>Get to know and follow Him</p>
+            </div>
           </div>
-          <div class="believe-two">
-            <img src="images/artists_in_new_york_city.webp" alt="Artist In New York City">
-            <h3>Find Meaning in Your Life</h3>
-            <p>Seek God’s perspective</p>
+          <div class="believe__section">
+            <picture class="believe__section__img">
+              <source srcset="images/artists_in_new_york_city-small.jpg" media="(max-width: 600px)">
+              <img src="images/artists_in_new_york_city.webp" alt="Artist In New York City">
+            </picture>
+            <div class="believe__section__text">
+              <h3>Find Meaning in Your Life</h3>
+              <p>Seek God’s perspective</p>
+            </div>
           </div>
-          <div class="believe-three">
-            <img src="images/young_woman_praying.webp" alt="Young Women Praying">
-            <h3>Navigate Life’s Challenges</h3>
-            <p>Discover strength, direction, and peace</p>
+          <div class="believe__section">
+            <picture class="believe__section__img">
+              <source srcset="images/young_woman_praying-small.jpg" media="(max-width: 600px)">
+              <img src="images/young_woman_praying.webp" alt="Young Women Praying">
+            </picture>
+            <div class="believe__section__text">
+              <h3>Navigate Life’s Challenges</h3>
+              <p>Discover strength, direction, and peace</p>
+            </div>
           </div>
         </div>
       </div>
       <div class="visit">
-        <div class="visit-church">
-          <!-- Light rays design taken from the LDS.org website. -->
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 600" width="1920" height="600" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;"><defs><clipPath id="__lottie_element_2"><rect width="1920" height="600" x="0" y="0"></rect></clipPath><linearGradient id="__lottie_element_6" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-194.34300231933594" y1="-84.04100036621094" x2="-194.57699584960938" y2="74.4000015258789"><stop offset="0%" stop-color="rgb(1,182,209)" stop-opacity="0.6000000238418579"></stop><stop offset="50%" stop-color="rgb(1,182,209)" stop-opacity="0.42500001192092896"></stop><stop offset="100%" stop-color="rgb(1,182,209)" stop-opacity="0.25"></stop></linearGradient><linearGradient id="__lottie_element_10" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-163.406005859375" y1="-83.46099853515625" x2="-163.86500549316406" y2="-4.392000198364258"><stop offset="0%" stop-color="rgb(1,182,209)" stop-opacity="0.3499999940395355"></stop><stop offset="50%" stop-color="rgb(1,182,209)" stop-opacity="0.25"></stop><stop offset="100%" stop-color="rgb(1,182,209)" stop-opacity="0.15000000596046448"></stop></linearGradient><linearGradient id="__lottie_element_14" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-163.23199462890625" y1="-83.9020004272461" x2="-163.07000732421875" y2="-4.14300012588501"><stop offset="0%" stop-color="rgb(1,182,209)" stop-opacity="0.6000000238418579"></stop><stop offset="50%" stop-color="rgb(1,182,209)" stop-opacity="0.42500001192092896"></stop><stop offset="100%" stop-color="rgb(1,182,209)" stop-opacity="0.25"></stop></linearGradient><linearGradient id="__lottie_element_18" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-469.88800048828125" y1="1.8049999475479126" x2="142.21600341796875" y2="0"><stop offset="0%" stop-color="rgb(1,182,209)" stop-opacity="0.6000000238418579"></stop><stop offset="50%" stop-color="rgb(1,182,209)" stop-opacity="0.4749999940395355"></stop><stop offset="100%" stop-color="rgb(1,182,209)" stop-opacity="0.3499999940395355"></stop></linearGradient></defs><g clip-path="url(#__lottie_element_2)"><g transform="matrix(3.137500047683716,0,0,3.137500047683716,1474.625,223.546875)" opacity="0.9999966651253464" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="url(#__lottie_element_6)" fill-opacity="1" d=" M-470,74.4010009765625 C-470,74.4010009765625 80.80000305175781,-83.9990005493164 80.80000305175781,-83.9990005493164 C80.80000305175781,-83.9990005493164 -470,-83.9990005493164 -470,-83.9990005493164 C-470,-83.9990005493164 -470,74.4010009765625 -470,74.4010009765625z"></path></g></g><g transform="matrix(3.137500047683716,-0.000015037737284728792,0.000015037737284728792,3.137500047683716,1474.626220703125,223.539794921875)" opacity="0.9999960359739253" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="url(#__lottie_element_10)" fill-opacity="1" d=" M142,-4.798999786376953 C142,-4.798999786376953 -470,-44.39899826049805 -470,-44.39899826049805 C-470,-44.39899826049805 -470,-83.9990005493164 -470,-83.9990005493164 C-470,-83.9990005493164 142,-83.9990005493164 142,-83.9990005493164 C142,-83.9990005493164 142,-4.798999786376953 142,-4.798999786376953z"></path></g></g><g transform="matrix(3.137500047683716,0.000007752341844025068,-0.000007752341844025068,3.137500047683716,1474.6243896484375,223.55050659179688)" opacity="0.9999956745246898" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="url(#__lottie_element_14)" fill-opacity="1" d=" M-470,-4.798999786376953 C-470,-4.798999786376953 142,-83.9990005493164 142,-83.9990005493164 C142,-83.9990005493164 142,-83.9990005493164 142,-83.9990005493164 C142,-83.9990005493164 -470,-83.9990005493164 -470,-83.9990005493164 C-470,-83.9990005493164 -470,-4.798999786376953 -470,-4.798999786376953z"></path></g></g><g transform="matrix(3.137500047683716,0,0,3.137500047683716,1474.625,223.546875)" opacity="0.9999951308731482" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="url(#__lottie_element_18)" fill-opacity="1" d=" M-470,-44.39899826049805 C-470,-44.39899826049805 142,-44.39899826049805 142,-44.39899826049805 C142,-44.39899826049805 142,-83.9990005493164 142,-83.9990005493164 C142,-83.9990005493164 -470,-83.9990005493164 -470,-83.9990005493164 C-470,-83.9990005493164 -470,-44.39899826049805 -470,-44.39899826049805z"></path></g></g></g></svg>
-          <h2>All are welcome. Visit a church near you.</h2>
-          <p>We’re a Christ-focused community, doing our best to love and serve others. There’s a place for you here.</p>
-          <p>Find a church near you.</p>
-          <label for="visit-input" class="hidden-label">Enter full address</label>
-          <input type="text" id="visit-input" placeholder="Enter full address" class="visit-input">
-          <button class="button--visit" aria-label="Find a church near you." type="button">Find</button>
-        </div>
-        <div class="visit-img">
+        <div class="visit__img">
           <img src="images/church_attendance_worship.webp" alt="People attending church">
+        </div>
+        <div class="visit__text">
+          <!-- Light rays design taken from the LDS.org website. -->
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 600" width="1920" height="600" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;"><defs><clipPath id="__lottie_element_2"><rect width="1920" height="600" x="0" y="0"></rect></clipPath><linearGradient id="__lottie_element_6" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-194.34300231933594" y1="-84.04100036621094" x2="-194.57699584960938" y2="74.4000015258789"><stop offset="0%" stop-color="rgb(1,182,209)" stop-opacity="0.6000000238418579"></stop><stop offset="50%" stop-color="rgb(1,182,209)" stop-opacity="0.42500001192092896"></stop><stop offset="100%" stop-color="rgb(1,182,209)" stop-opacity="0.25"></stop></linearGradient><linearGradient id="__lottie_element_10" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-163.406005859375" y1="-83.46099853515625" x2="-163.86500549316406" y2="-4.392000198364258"><stop offset="0%" stop-color="rgb(1,182,209)" stop-opacity="0.3499999940395355"></stop><stop offset="50%" stop-color="rgb(1,182,209)" stop-opacity="0.25"></stop><stop offset="100%" stop-color="rgb(1,182,209)" stop-opacity="0.15000000596046448"></stop></linearGradient><linearGradient id="__lottie_element_14" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-163.23199462890625" y1="-83.9020004272461" x2="-163.07000732421875" y2="-4.14300012588501"><stop offset="0%" stop-color="rgb(1,182,209)" stop-opacity="0.6000000238418579"></stop><stop offset="50%" stop-color="rgb(1,182,209)" stop-opacity="0.42500001192092896"></stop><stop offset="100%" stop-color="rgb(1,182,209)" stop-opacity="0.25"></stop></linearGradient><linearGradient id="__lottie_element_18" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-469.88800048828125" y1="1.8049999475479126" x2="142.21600341796875" y2="0"><stop offset="0%" stop-color="rgb(1,182,209)" stop-opacity="0.6000000238418579"></stop><stop offset="50%" stop-color="rgb(1,182,209)" stop-opacity="0.4749999940395355"></stop><stop offset="100%" stop-color="rgb(1,182,209)" stop-opacity="0.3499999940395355"></stop></linearGradient></defs><g clip-path="url(#__lottie_element_2)"><g transform="matrix(3.137500047683716,0,0,3.137500047683716,1474.625,223.546875)" opacity="0.9999966651253464" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="url(#__lottie_element_6)" fill-opacity="1" d=" M-470,74.4010009765625 C-470,74.4010009765625 80.80000305175781,-83.9990005493164 80.80000305175781,-83.9990005493164 C80.80000305175781,-83.9990005493164 -470,-83.9990005493164 -470,-83.9990005493164 C-470,-83.9990005493164 -470,74.4010009765625 -470,74.4010009765625z"></path></g></g><g transform="matrix(3.137500047683716,-0.000015037737284728792,0.000015037737284728792,3.137500047683716,1474.626220703125,223.539794921875)" opacity="0.9999960359739253" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="url(#__lottie_element_10)" fill-opacity="1" d=" M142,-4.798999786376953 C142,-4.798999786376953 -470,-44.39899826049805 -470,-44.39899826049805 C-470,-44.39899826049805 -470,-83.9990005493164 -470,-83.9990005493164 C-470,-83.9990005493164 142,-83.9990005493164 142,-83.9990005493164 C142,-83.9990005493164 142,-4.798999786376953 142,-4.798999786376953z"></path></g></g><g transform="matrix(3.137500047683716,0.000007752341844025068,-0.000007752341844025068,3.137500047683716,1474.6243896484375,223.55050659179688)" opacity="0.9999956745246898" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="url(#__lottie_element_14)" fill-opacity="1" d=" M-470,-4.798999786376953 C-470,-4.798999786376953 142,-83.9990005493164 142,-83.9990005493164 C142,-83.9990005493164 142,-83.9990005493164 142,-83.9990005493164 C142,-83.9990005493164 -470,-83.9990005493164 -470,-83.9990005493164 C-470,-83.9990005493164 -470,-4.798999786376953 -470,-4.798999786376953z"></path></g></g><g transform="matrix(3.137500047683716,0,0,3.137500047683716,1474.625,223.546875)" opacity="0.9999951308731482" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="url(#__lottie_element_18)" fill-opacity="1" d=" M-470,-44.39899826049805 C-470,-44.39899826049805 142,-44.39899826049805 142,-44.39899826049805 C142,-44.39899826049805 142,-83.9990005493164 142,-83.9990005493164 C142,-83.9990005493164 -470,-83.9990005493164 -470,-83.9990005493164 C-470,-83.9990005493164 -470,-44.39899826049805 -470,-44.39899826049805z"></path></g></g></g></svg> -->
+          <div>
+            <h2>All are welcome. Visit a church near you.</h2>
+            <p>We’re a Christ-focused community, doing our best to love and serve others. There’s a place for you here.</p>
+            <p>Find a church near you.</p>
+            <label for="visit-input" class="hidden-label">Enter full address</label>
+            <input type="text" id="visit-input" placeholder="Enter full address" class="visit-input">
+            <button class="button--visit" aria-label="Find a church near you." type="button">Find</button>
+          </div>
         </div>
       </div>
       <div class="questions">

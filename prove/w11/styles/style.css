@@ -1,3 +1,175 @@
+body {
+  margin: 0%;
+}
 
+main {
+  font-family: Arial, "noto sans", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+}
+header .ham-menu {
+  min-width: 32px;
+  width: 32px;
+  height: 30px;
+  background-color: #007da5;
+  padding: 25px 12px;
+}
+header .light-rays {
+  max-width: 70px;
+  height: 100%;
+  margin-right: auto;
+}
+header .church-name {
+  margin-right: auto;
+  height: 100%;
+  width: fit-content;
+}
+header #searchIcon {
+  margin-right: 5%;
+}
+header #searchIcon:hover {
+  cursor: pointer;
+  fill: #007da5;
+}
+header #profileSVG {
+  background-color: #007da5;
+  margin-right: 5%;
+  padding: 5px 10px;
+  fill: white;
+}
+header #profileSVG:hover {
+  cursor: pointer;
+  background-color: #003057;
+  transition: 0.3s;
+}
+
+.hero {
+  font-family: Arial, "noto sans", sans-serif;
+  color: rgb(33, 34, 37);
+}
+.hero__line {
+  padding: 2px;
+  margin-left: 15px;
+  margin-top: 10px;
+  width: 55px;
+  background-color: #007da5;
+}
+.hero__img {
+  width: 100%;
+}
+.hero h1 {
+  margin: 0%;
+  margin-top: 5px;
+  max-width: 70%;
+  font-size: 40px;
+  margin-left: 15px;
+}
+.hero p {
+  margin-left: 15px;
+}
+.hero__button {
+  margin-left: 15px;
+  font-size: 16px;
+  padding: 9px 16px;
+  background-color: #007da5;
+  border: none;
+  border-radius: 2px;
+  color: white;
+}
+.hero__button:hover {
+  cursor: pointer;
+  background-color: #003057;
+  transition: 0.3s;
+}
+
+.believe {
+  margin-top: 80px;
+  margin-left: 15px;
+  color: #424c53;
+}
+.believe h2 {
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+.believe p {
+  font-size: 17px;
+  font-weight: 100;
+  margin-bottom: 0%;
+}
+.believe svg {
+  width: 16px;
+  padding: 3px;
+  border-radius: 2px;
+  margin: 5px auto 30px auto;
+  fill: white;
+  background-color: #007da5;
+}
+.believe svg:hover {
+  cursor: pointer;
+  background-color: #003057;
+  transition: 0.3s;
+}
+.believe__section {
+  display: flex;
+}
+.believe__section__img {
+  max-width: 45%;
+  max-height: 55%;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.believe__section__img img {
+  width: 100%;
+  height: 100%;
+}
+.believe__section__img img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 1.5s;
+}
+.believe__section__text {
+  margin-left: auto;
+  margin: 5px 20px 0px 15px;
+}
+.believe__section__text h3 {
+  margin: 0%;
+}
+
+.visit {
+  margin: 140px 15px;
+}
+.visit__img {
+  overflow: hidden;
+  background-color: aqua;
+  width: 100%;
+}
+.visit__img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.visit__img img:hover {
+  transform: scale(1.05);
+  transition: 1.5s;
+}
+.visit__text {
+  margin: 8px auto;
+}
+.visit__text div {
+  padding: 5% 3%;
+  background-image: url("images/blue-background.png"); /* Path to the image */
+  background-size: cover; /* Ensures the image covers the element */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center;
+}
+.visit__text div h2 {
+  margin: 0%;
+}
 
 /*# sourceMappingURL=style.css.map */

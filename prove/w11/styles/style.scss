@@ -1,1 +1,227 @@
 $header-font: Arial, "noto sans", sans-serif;
+$primary-color: #007da5;
+$secondary-color: #003057;
+$grey: rgb(33, 34, 37);
+$left-margins: 15px;
+$transition: 0.3s;
+$border-radius: 2px;
+
+body {
+    margin: 0%;
+    
+}
+
+main {
+    font-family: $header-font;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+
+    .ham-menu {
+        min-width: 32px;
+        width: 32px;
+        height: 30px;
+        background-color: $primary-color;
+        padding: 25px 12px;
+    }
+
+    .light-rays {
+        max-width: 70px;
+        height: 100%;
+        margin-right: auto;
+        
+    }
+
+    .church-name {
+        margin-right: auto;
+        height: 100%;
+        width: fit-content;
+    }
+
+    #searchIcon {
+        margin-right: 5%;
+    }
+
+    #searchIcon:hover {
+        cursor: pointer;
+        fill: $primary-color;
+    }
+
+    #profileSVG {
+        background-color: $primary-color;
+        margin-right: 5%;
+        padding: 5px 10px;
+        fill: white;
+    }
+
+    #profileSVG:hover {
+        cursor: pointer;
+        background-color: $secondary-color;
+        transition: $transition;
+    }
+}
+
+.hero {
+    font-family: $header-font;
+    color: $grey;
+
+    &__line {
+        padding: 2px;
+        margin-left: $left-margins;
+        margin-top: 10px;
+        width: 55px;
+        background-color: $primary-color;
+    }
+
+    &__img {
+        
+        width: 100%;
+        // position: absolute;
+        // z-index: -1;
+    }
+
+    h1 {
+        margin: 0%;
+        margin-top: 5px;
+        max-width: 70%;
+        font-size: 40px;
+        margin-left: $left-margins;
+    }
+
+    p {
+        margin-left: $left-margins;
+    }
+
+    &__button {
+        margin-left: $left-margins;
+        font-size: 16px;
+        padding: 9px 16px;
+        background-color: $primary-color;
+        border: none;
+        border-radius: $border-radius;
+        color: white;
+    }
+
+    &__button:hover {
+        cursor: pointer;
+        background-color: $secondary-color;
+        transition: $transition;
+    }
+}
+
+.believe {
+    margin-top: 80px;
+    margin-left: $left-margins;
+    color: #424c53;
+
+    h2 {
+        font-size: 30px;
+        font-weight: 100;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 17px;
+        font-weight: 100;
+        margin-bottom: 0%;
+    }
+
+    svg {
+        width: 16px;
+        padding: 3px;
+        border-radius: $border-radius;
+        margin: 5px auto 30px auto;
+        fill: white;
+        background-color: $primary-color;
+    }
+
+    svg:hover {
+        cursor: pointer;
+        background-color: $secondary-color;
+        transition: $transition;
+    }
+
+    &__section {
+        display: flex;
+
+        &__img {
+            max-width: 45%;
+            max-height: 55%;
+            overflow: hidden;
+            margin-bottom: 5px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            img:hover {
+                cursor: pointer;
+                transform: scale(1.05);
+                transition: 1.5s;
+            }
+        }
+
+        &__text {
+            margin-left: auto;
+            margin: 5px 20px 0px 15px;
+
+            h3 {
+                margin: 0%;
+            }
+        }
+    }
+}
+
+.visit {
+    margin: 140px 15px;
+
+    &__img {
+        overflow: hidden;
+        background-color: aqua;
+        width: 100%;
+        
+
+
+        img {
+            width: 100%; 
+            height: auto; 
+            display: block;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            transition: 1.5s;
+        }
+    }
+
+    &__text {
+        margin: 8px auto;
+        
+        // /* SVG Layer */
+        // svg {
+        //     position: absolute;
+        //     top: -10px;
+        //     left: 0;
+        //     width: 100%;
+        // }
+
+        div {
+            padding: 5% 3%;
+            background-image: url("images/blue-background.png"); /* Path to the image */
+            background-size: cover; /* Ensures the image covers the element */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-position: center;
+
+            h2 {
+                margin: 0%;
+            }
+        }
+    }
+
+    
+}
