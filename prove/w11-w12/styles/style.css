@@ -29,8 +29,11 @@ header .church-name {
   height: 100%;
   width: fit-content;
 }
-header #searchIcon {
-  margin-right: 5%;
+header #searchIcon,
+header #churchIcon,
+header #languageIcon,
+header #resourcesIcon {
+  margin-right: 2%;
 }
 header #searchIcon:hover {
   cursor: pointer;
@@ -141,27 +144,27 @@ header #profileSVG:hover {
   margin: 0%;
 }
 
-.visit {
+.card {
   margin: 50px 15px;
 }
-.visit__img {
+.card__img {
   overflow: hidden;
   background-color: aqua;
   width: 100%;
 }
-.visit__img img {
+.card__img img {
   width: 100%;
   height: auto;
   display: block;
 }
-.visit__img img:hover {
+.card__img img:hover {
   transform: scale(1.05);
   transition: 1.5s;
 }
-.visit__text {
+.card__text {
   margin: 8px auto;
 }
-.visit__text__div {
+.card__text__div {
   padding: 5%;
   color: white;
   background-color: #007da5;
@@ -169,25 +172,25 @@ header #profileSVG:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.visit__text__div h2 {
+.card__text__div h2 {
   margin: 0%;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 100;
 }
-.visit__text__div p {
+.card__text__div p {
   line-height: 1.5;
   margin: 30px auto;
 }
-.visit__text__div label {
+.card__text__div label {
   font-size: 14px;
   font-weight: 600;
 }
-.visit__text__div .input-div {
+.card__text__div .input-div {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.visit__text__div #visit-input {
+.card__text__div #card-input {
   margin-top: 8px;
   margin-right: 10px;
   min-width: 80%;
@@ -196,10 +199,10 @@ header #profileSVG:hover {
   border: #424c53;
   font-size: 16px;
 }
-.visit__text__div #visit-input::placeholder {
+.card__text__div #card-input::placeholder {
   color: #b9b8b8;
 }
-.visit__text__div .button-visit {
+.card__text__div .button-card, .card__text__div .button-card__req {
   cursor: pointer;
   margin-top: 8px;
   margin-right: auto;
@@ -210,9 +213,145 @@ header #profileSVG:hover {
   border: #424c53;
   color: #007da5;
 }
-.visit__text__div .button-visit:hover {
+.card__text__div .button-card__req, .card__text__div .button-card__req__req {
+  width: 140px;
+}
+.card__text__div .button-card:hover, .card__text__div .button-card__req:hover {
   background-color: #003057;
   color: white;
+  transition: 0.3s;
+}
+
+.questions {
+  margin: 140px 15px;
+}
+.questions h2 {
+  margin: 0%;
+  margin-bottom: 30px;
+  font-size: 34px;
+  font-weight: 100;
+}
+.questions .details {
+  margin-left: 1rem;
+  margin-bottom: 45px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 10px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+  padding: 8px 20px;
+  align-items: center;
+}
+.questions .details p {
+  font-weight: 600;
+  color: rgb(85, 85, 85);
+}
+.questions .details svg {
+  width: 24px;
+  fill: #007da5;
+}
+.questions .details:hover {
+  cursor: pointer;
+  background-color: rgb(240, 240, 240);
+}
+
+.hope {
+  margin: 80px 15px;
+  text-align: center;
+  font-weight: 100;
+}
+.hope h2 {
+  font-weight: 100;
+  font-size: 30px;
+}
+.hope__quote {
+  margin: 10px 40px;
+  font-size: 18px;
+  line-height: 1.8rem;
+  color: #505961;
+}
+.hope__quote a {
+  color: #007da5;
+}
+.hope__quote a:hover {
+  text-decoration: none;
+}
+.hope__author {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  text-align: left;
+  width: 350px;
+  margin: 40px auto;
+}
+.hope__author__img {
+  grid-row: 1/3;
+  border-radius: 100%;
+  overflow: hidden;
+  background-color: aqua;
+}
+.hope__author__img img {
+  width: 80px;
+  display: block;
+}
+.hope__author__name {
+  font-size: 18px;
+  margin: 0%;
+  margin-left: 15px;
+  align-self: self-end;
+  font-weight: 700;
+}
+.hope__author__name:hover {
+  cursor: pointer;
+  color: #007da5;
+}
+.hope__author__church {
+  margin: 0%;
+  font-size: 14px;
+  margin-left: 15px;
+  line-height: 1.3rem;
+}
+
+.community {
+  margin: auto 20px;
+}
+.community h2 {
+  font-size: 32px;
+  font-weight: 100;
+  text-align: center;
+}
+.community__div {
+  text-align: center;
+  line-height: 1.5rem;
+}
+.community__div h3 {
+  font-size: 20px;
+}
+.community__div__img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto 50px auto;
+}
+.community__div__img img {
+  width: auto;
+  height: 100%;
+}
+.community__div__button {
+  margin-left: 15px;
+  font-size: 16px;
+  padding: 9px 16px;
+  background-color: #007da5;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  margin-bottom: 50px;
+}
+.community__div__button:hover {
+  cursor: pointer;
+  background-color: #003057;
   transition: 0.3s;
 }
 

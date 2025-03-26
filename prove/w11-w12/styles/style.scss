@@ -42,14 +42,19 @@ header {
         width: fit-content;
     }
 
-    #searchIcon {
-        margin-right: 5%;
+    #searchIcon, 
+    #churchIcon, 
+    #languageIcon,
+    #resourcesIcon {
+        margin-right: 2%;
     }
 
     #searchIcon:hover {
         cursor: pointer;
         fill: $primary-color;
     }
+
+
 
     #profileSVG {
         background-color: $primary-color;
@@ -177,7 +182,7 @@ header {
     }
 }
 
-.visit {
+.card {
     margin: 50px 15px;
 
     &__img {
@@ -213,7 +218,7 @@ header {
         
             h2 {
                 margin: 0%;
-                font-size: 28px;
+                font-size: 30px;
                 font-weight: 100;
             }
 
@@ -233,7 +238,7 @@ header {
                 flex-wrap: wrap;
             }
 
-            #visit-input {
+            #card-input {
                 margin-top: 8px;
                 margin-right: 10px;
                 min-width: 80%;
@@ -244,11 +249,11 @@ header {
                 
             }
 
-            #visit-input::placeholder {
+            #card-input::placeholder {
                 color: #b9b8b8;
             }
 
-            .button-visit {
+            .button-card, .button-card__req {
                 cursor: pointer;
                 margin-top: 8px;
                 margin-right: auto;
@@ -258,15 +263,173 @@ header {
                 border-radius: $border-radius;
                 border: #424c53;
                 color: $primary-color;
+
+                &__req {
+                    width: 140px;
+                }
             }
 
-            .button-visit:hover {
+            .button-card:hover, .button-card__req:hover {
                 background-color: $secondary-color;
                 color: white;
                 transition: $transition;
             }
         }
     }
+}
 
-    
+.questions {
+    margin: 140px 15px;
+
+    h2 {
+        margin: 0%;
+        margin-bottom: 30px;
+        font-size: 34px;
+        font-weight: 100;
+    }
+
+    .details {
+        margin-left: 1rem;
+        margin-bottom: 45px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-gap: 10px;
+        border-bottom: 1px solid rgb(226, 226, 226);
+        padding: 8px 20px;
+        align-items: center;
+
+        p {
+            font-weight: 600;
+            color: rgb(85, 85, 85);
+            
+        }
+
+        svg {
+            width: 24px;
+            fill: $primary-color;
+        }
+    }
+
+    .details:hover {
+        cursor: pointer;
+        background-color: rgb(240, 240, 240);
+    }
+}
+
+.hope {
+    margin: 80px 15px;
+    text-align: center;
+    font-weight: 100;
+
+    h2 {
+        font-weight: 100;
+        font-size: 30px;
+    }
+
+    &__quote {
+        margin: 10px 40px;
+        font-size: 18px;
+        line-height: 1.8rem;
+        color: #505961;
+
+        a {
+            color: $primary-color;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__author {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        text-align: left;
+        width: 350px;
+        margin: 40px auto;
+
+        &__img {
+            grid-row: 1/3;
+            border-radius: 100%;
+            overflow: hidden;
+            background-color: aqua;
+
+            img {
+                width: 80px; 
+                display: block;
+            }
+        }
+
+        &__name {
+            font-size: 18px;
+            margin: 0%;
+            margin-left: $left-margins;
+            align-self: self-end;
+            font-weight: 700;
+        }
+
+        &__name:hover {
+            cursor: pointer;
+            color: $primary-color;
+        }
+
+        &__church {
+            margin: 0%;
+            font-size: 14px;
+            margin-left: $left-margins;
+            line-height: 1.3rem;
+        }
+    }
+}
+
+.community {
+    margin: auto 20px;
+
+    h2 {
+        font-size: 32px;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    &__div {
+        text-align: center;
+        line-height: 1.5rem;
+
+        h3 {
+            font-size: 20px;
+        }
+        
+        &__img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            margin: 10px auto 50px auto;
+                
+            img {
+                width: auto;
+                height: 100%;
+            }
+        }
+
+        &__button {
+            margin-left: $left-margins;
+            font-size: 16px;
+            padding: 9px 16px;
+            background-color: $primary-color;
+            border: none;
+            border-radius: $border-radius;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        &__button:hover {
+            cursor: pointer;
+            background-color: $secondary-color;
+            transition: $transition;
+        }
+    }
 }
