@@ -55,15 +55,33 @@ header #profileSVG:hover {
   font-family: Arial, "noto sans", sans-serif;
   color: rgb(33, 34, 37);
 }
+@media (min-width: 950px) {
+  .hero {
+    margin-bottom: 20%;
+    color: white;
+  }
+}
 .hero__line {
-  padding: 2px;
   margin-left: 15px;
   margin-top: 10px;
   width: 55px;
-  background-color: #007da5;
+  border-bottom: solid 5px #007da5;
+}
+@media (min-width: 950px) {
+  .hero__line {
+    margin-top: 0%;
+    padding-top: 10%;
+    margin-left: 100px;
+  }
 }
 .hero__img {
   width: 100%;
+}
+@media (min-width: 950px) {
+  .hero__img {
+    position: absolute;
+    z-index: -1;
+  }
 }
 .hero h1 {
   margin: 0%;
@@ -72,8 +90,18 @@ header #profileSVG:hover {
   font-size: 40px;
   margin-left: 15px;
 }
+@media (min-width: 950px) {
+  .hero h1 {
+    margin-left: 100px;
+  }
+}
 .hero p {
   margin-left: 15px;
+}
+@media (min-width: 950px) {
+  .hero p {
+    margin-left: 100px;
+  }
 }
 .hero__button {
   margin-left: 15px;
@@ -83,6 +111,11 @@ header #profileSVG:hover {
   border: none;
   border-radius: 2px;
   color: white;
+}
+@media (min-width: 950px) {
+  .hero__button {
+    margin-left: 100px;
+  }
 }
 .hero__button:hover {
   cursor: pointer;
@@ -95,17 +128,39 @@ header #profileSVG:hover {
   margin-left: 15px;
   color: #424c53;
 }
-.believe h2 {
+@media (min-width: 950px) {
+  .believe {
+    margin: auto 5%;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+}
+@media (min-width: 950px) {
+  .believe__header {
+    display: flex;
+    align-items: center;
+    grid-column: 1/4;
+  }
+}
+.believe__header h2 {
   font-size: 30px;
   font-weight: 100;
   margin-bottom: 10px;
 }
-.believe p {
+.believe__header p {
   font-size: 17px;
   font-weight: 100;
   margin-bottom: 0%;
 }
-.believe svg {
+@media (min-width: 950px) {
+  .believe__header p {
+    margin-left: 30px;
+    margin-top: 24px;
+  }
+}
+.believe__header svg {
   width: 16px;
   padding: 3px;
   border-radius: 2px;
@@ -113,23 +168,47 @@ header #profileSVG:hover {
   fill: white;
   background-color: #007da5;
 }
-.believe svg:hover {
+@media (min-width: 950px) {
+  .believe__header svg {
+    margin: 20px;
+    margin-top: 34px;
+  }
+}
+.believe__header svg:hover {
   cursor: pointer;
   background-color: #003057;
   transition: 0.3s;
 }
 .believe__section {
   display: flex;
+  margin-bottom: 8px;
+}
+@media (min-width: 950px) {
+  .believe__section {
+    flex-direction: column;
+  }
 }
 .believe__section__img {
-  max-width: 45%;
-  max-height: 55%;
   overflow: hidden;
-  margin-bottom: 5px;
+  width: 300px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 950px) {
+  .believe__section__img {
+    width: 100%;
+    height: 160px;
+  }
 }
 .believe__section__img img {
+  overflow: hidden;
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .believe__section__img img:hover {
   cursor: pointer;
@@ -140,8 +219,18 @@ header #profileSVG:hover {
   margin-left: auto;
   margin: 5px 20px 0px 15px;
 }
+@media (min-width: 950px) {
+  .believe__section__text {
+    margin: 0%;
+  }
+}
 .believe__section__text h3 {
-  margin: 0%;
+  margin: 3% 0%;
+}
+@media (min-width: 950px) {
+  .believe__section__text p {
+    margin: 0%;
+  }
 }
 
 .card {
@@ -149,13 +238,17 @@ header #profileSVG:hover {
 }
 .card__img {
   overflow: hidden;
-  background-color: aqua;
   width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .card__img img {
   width: 100%;
   height: auto;
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 .card__img img:hover {
   transform: scale(1.05);
@@ -255,7 +348,7 @@ header #profileSVG:hover {
 }
 
 .hope {
-  margin: 80px 15px;
+  margin: 140px 15px;
   text-align: center;
   font-weight: 100;
 }
@@ -289,7 +382,7 @@ header #profileSVG:hover {
   background-color: aqua;
 }
 .hope__author__img img {
-  width: 80px;
+  width: 70px;
   display: block;
 }
 .hope__author__name {
@@ -353,6 +446,29 @@ header #profileSVG:hover {
   cursor: pointer;
   background-color: #003057;
   transition: 0.3s;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 15px;
+  color: #505961;
+  margin: 200px auto;
+}
+.links__div {
+  margin: auto 40%;
+}
+.links__div svg {
+  margin: auto 25%;
+}
+.links__border {
+  margin: 4% auto 5% auto;
+  width: 200px;
+  border-bottom: solid 1px #007da5;
 }
 
 /*# sourceMappingURL=style.css.map */

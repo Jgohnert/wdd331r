@@ -5,10 +5,16 @@ $grey: rgb(33, 34, 37);
 $left-margins: 15px;
 $transition: 0.3s;
 $border-radius: 2px;
+$break-large: 950px;
+
+@mixin breakpoint($break) {
+    @if $break == large {
+        @media (min-width: $break-large) { @content; }
+    }
+}
 
 body {
     margin: 0%;
-    
 }
 
 main {
@@ -74,19 +80,31 @@ header {
     font-family: $header-font;
     color: $grey;
 
+    @include breakpoint(large) {
+        margin-bottom: 20%;
+        color: white;
+    }
+
     &__line {
-        padding: 2px;
         margin-left: $left-margins;
         margin-top: 10px;
         width: 55px;
-        background-color: $primary-color;
+        border-bottom: solid 5px $primary-color;
+
+        @include breakpoint(large) {
+            margin-top: 0%;
+            padding-top: 10%;
+            margin-left: 100px;
+        }
     }
 
     &__img {
-        
         width: 100%;
-        // position: absolute;
-        // z-index: -1;
+
+        @include breakpoint(large) {
+            position: absolute;
+            z-index: -1;
+        }
     }
 
     h1 {
@@ -95,10 +113,18 @@ header {
         max-width: 70%;
         font-size: 40px;
         margin-left: $left-margins;
+
+        @include breakpoint(large) {
+            margin-left: 100px;
+        }
     }
 
     p {
         margin-left: $left-margins;
+
+        @include breakpoint(large) {
+            margin-left: 100px;
+        }
     }
 
     &__button {
@@ -109,6 +135,10 @@ header {
         border: none;
         border-radius: $border-radius;
         color: white;
+
+        @include breakpoint(large) {
+            margin-left: 100px;
+        }
     }
 
     &__button:hover {
@@ -123,45 +153,87 @@ header {
     margin-left: $left-margins;
     color: #424c53;
 
-    h2 {
-        font-size: 30px;
-        font-weight: 100;
-        margin-bottom: 10px;
+    @include breakpoint(large) {
+        margin: auto 5%;
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
     }
 
-    p {
-        font-size: 17px;
-        font-weight: 100;
-        margin-bottom: 0%;
-    }
+    &__header {
+        @include breakpoint(large) {
+            display: flex;
+            align-items: center;
+            grid-column: 1/4;
+        }
+        
+        h2 {
+            font-size: 30px;
+            font-weight: 100;
+            margin-bottom: 10px;
+        }
+    
+        p {
+            font-size: 17px;
+            font-weight: 100;
+            margin-bottom: 0%;
 
-    svg {
-        width: 16px;
-        padding: 3px;
-        border-radius: $border-radius;
-        margin: 5px auto 30px auto;
-        fill: white;
-        background-color: $primary-color;
-    }
+            @include breakpoint(large) {
+                margin-left: 30px;
+                margin-top: 24px;
+            }
+        }
+    
+        svg {
+            width: 16px;
+            padding: 3px;
+            border-radius: $border-radius;
+            margin: 5px auto 30px auto;
+            fill: white;
+            background-color: $primary-color;
 
-    svg:hover {
-        cursor: pointer;
-        background-color: $secondary-color;
-        transition: $transition;
+            @include breakpoint(large) {
+                margin: 20px;
+                margin-top: 34px;
+            }
+        }
+    
+        svg:hover {
+            cursor: pointer;
+            background-color: $secondary-color;
+            transition: $transition;
+        }
     }
 
     &__section {
         display: flex;
+        margin-bottom: 8px;
+
+        @include breakpoint(large) {
+            flex-direction: column;
+        }
 
         &__img {
-            max-width: 45%;
-            max-height: 55%;
             overflow: hidden;
-            margin-bottom: 5px;
+            width: 300px;
+            height: 150px;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+
+            @include breakpoint(large) {
+                width: 100%;
+                height: 160px;
+            }
 
             img {
+                overflow: hidden;
                 width: 100%;
-                height: 100%;
+                height: auto;
+                display: flex; 
+                align-items: center;
+                justify-content: center;
             }
 
             img:hover {
@@ -175,8 +247,18 @@ header {
             margin-left: auto;
             margin: 5px 20px 0px 15px;
 
-            h3 {
+            @include breakpoint(large) {
                 margin: 0%;
+            }
+
+            h3 {
+                margin: 3% 0%;
+            }
+
+            p {
+                @include breakpoint(large) {
+                    margin: 0%;
+                }
             }
         }
     }
@@ -187,15 +269,18 @@ header {
 
     &__img {
         overflow: hidden;
-        background-color: aqua;
         width: 100%;
-        
-
+        height: 400px;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
 
         img {
             width: 100%; 
             height: auto; 
-            display: block;
+            display: flex;
+            justify-content: center;
+            
         }
 
         img:hover {
@@ -317,7 +402,7 @@ header {
 }
 
 .hope {
-    margin: 80px 15px;
+    margin: 140px 15px;
     text-align: center;
     font-weight: 100;
 
@@ -355,7 +440,7 @@ header {
             background-color: aqua;
 
             img {
-                width: 80px; 
+                width: 70px; 
                 display: block;
             }
         }
@@ -431,5 +516,31 @@ header {
             background-color: $secondary-color;
             transition: $transition;
         }
+    }
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    color: #505961;
+    margin: 200px auto;
+
+    &__div {
+        margin: auto 40%;
+        
+        svg {
+            margin: auto 25%;
+        }
+    }
+
+    &__border {
+        margin: 4% auto 5% auto;
+        width: 200px;
+        border-bottom: solid 1px $primary-color;
     }
 }
