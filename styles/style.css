@@ -1,0 +1,100 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+body {
+  margin: 0%;
+  font-family: "Lora", serif;
+}
+body a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #1b5d79;
+  color: #FFFCFF;
+  text-align: center;
+  width: 100%;
+}
+header h1 {
+  margin: 0%;
+  padding: 50px;
+}
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #50514F;
+}
+header nav a {
+  background-color: #50514F;
+  padding: 18px;
+  color: #FFFCFF;
+  width: 100%;
+}
+header nav a:hover {
+  transition: 0.2s;
+  background-color: #C3B299;
+  color: #50514F;
+}
+
+main {
+  background-color: #FFFCFF;
+}
+
+section {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  text-align: center;
+}
+section h2 {
+  color: #50514F;
+  margin: 0px 5% 50px 5%;
+}
+section ul {
+  list-style: square;
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style: none;
+  text-align: center;
+  padding: 0%;
+}
+@media (min-width: 800px) {
+  section ul {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: auto 10px;
+  }
+}
+section ul li {
+  padding: 20px;
+  margin: 10px 100px;
+  border: solid 5px #CBD4C2;
+  background-color: #FFFCFF;
+}
+@media (min-width: 800px) {
+  section ul li {
+    margin: 5px;
+  }
+}
+section ul li a {
+  color: #50514F;
+  font-weight: 800;
+}
+section ul li a:hover {
+  transition: 0.2s;
+  font-size: 16.4px;
+}
+section ul li hr {
+  opacity: 0;
+}
+
+footer {
+  background-color: #1b5d79;
+  color: #FFFCFF;
+  text-align: center;
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-top: solid 1px #50514F;
+  font-weight: 800;
+}
+
+/*# sourceMappingURL=style.css.map */
